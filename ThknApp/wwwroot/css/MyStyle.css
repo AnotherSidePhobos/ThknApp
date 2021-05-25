@@ -1,0 +1,300 @@
+﻿body {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #5e5e5e;
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header__content {
+    padding: 4px 0px 3px;
+}
+.header__content-inner {
+    display: flex;
+    justify-content: space-between;
+}
+.menu li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 100px;
+}
+.header__top {
+    background-color: #303030;
+}
+.header__contacts:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.textInHeader {
+    color: #cbcacb;
+    letter-spacing: 0.25px;
+    line-height: 45px;
+}
+
+.header__phone,
+.header__email {
+    color: #cbcacb;
+    letter-spacing: 0.25px;
+    line-height: 45px;
+    position: relative;
+}
+
+.header__phone {
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+    .header__phone:before {
+        content: "\f095";
+        font-family: 'icomoon';
+        position: absolute;
+        left: 0;
+        color: #ffc222;
+    }
+
+.header__email {
+    padding-left: 24px;
+}
+
+    .header__email:before {
+        content: "\f003";
+        font-family: 'icomoon';
+        position: absolute;
+        left: 0;
+        color: #ffc222;
+    }
+
+.header__btn {
+    float: right;
+    line-height: 36px;
+    color: #1b1b1b;
+    background-color: #ffc222;
+    padding: 5px 20px 4px 50px;
+    font-size: 16px;
+    display: block;
+    position: relative;
+}
+
+.header__btn:before {
+    content: "\f0b1";
+    font-family: 'icomoon';
+    position: absolute;
+    left: 22px;
+    color: #1b1b1b;
+}
+
+.header__logo{
+    margin-left: 100px;
+    margin-bottom: 30px;
+}
+
+
+
+.fdfs{
+    margin-top: -5px;
+}
+.slider {
+    background: linear-gradient(#0396ff, #32ccbc);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+}
+
+.slider__item{
+    text-align: center;
+    padding-top: 10px;
+    max-width: 665px;
+    margin: 0 auto;
+}
+.slider__title{
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 500;
+}
+.slider__button{
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    font-weight: 500;
+    padding: 8px 30px 8px 24px;
+    border: 2px solid #0094ff;
+
+}
+.slider__inner{
+    position: relative;
+}
+.slcik_btn {
+    position: absolute;
+    top: 40%;
+    z-index: 3;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    background-color: cornflowerblue;
+}
+.slcik_btn.slick-disabled {
+    background-color: red;
+}
+.slcik_btn {
+    color: white;
+}
+.slick-next {
+    right: 0;
+}
+.slick-prev{
+    left: 0;
+}
+.pics {
+    min-height: 500px;
+    min-width: 100px;
+    background-repeat: no-repeat;
+}
+.pics1{
+
+    background-image: url(/img/1.jpg)
+
+}
+.pics2 {
+    background-image: url(/img/2.jpg)
+}
+.pics3 {
+    background-image: url(/img/3.jpg)
+}
+.pics4 {
+    background-image: url(/img/4.jpg);
+}
+.head1{
+    background-color: darkseagreen;
+}
+
+.h_main{
+    position: relative;
+}
+.logOff{
+    position: absolute;
+    right: 300px;
+}
+.reg {
+    position: absolute;
+    right: 400px;
+}
+.sig {
+    position: absolute;
+    right: 300px;
+}
+.hello {
+    position: absolute;
+    right: 400px;
+}
+.hH {
+    position: absolute;
+    left: 50px;
+}
+.hL {
+    position: absolute;
+    left: 150px;
+}
+.hpH {
+    position: absolute;
+    left: 250px;
+}
+.hEm {
+    position: absolute;
+    left: 450px;
+}
+.mainContent {
+    position: relative;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    
+}
+.firstTitle {
+    position: absolute;
+    color: mediumvioletred;
+
+}
+.menu a {
+    color: #323232;
+    font-size: 26px;
+    line-height: 36px;
+    border: 2px solid transparent;
+    padding: 0px 16px;
+    transition: all .4s;
+}
+
+.menu a:hover {
+    border-color: #ffc222;
+}
+
+.lastSect {
+    background-color: #27365C;
+    min-height: 450px;
+}
+.lineR {
+    min-height: 5px;
+    min-width: 5px;
+    background-color: #099df6; /* Цвет линии */
+    color: #099df6; /* Цвет линии для IE6-7 */
+    border: none; /* Убираем границу */
+}
+.footer__inner{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+.footer__inner-map {
+    position: absolute;
+    right: 450px;
+}
+.footer__inner-info{
+    position: absolute;
+    top: 50px;
+    left: 700px;
+}
+.slcik_btn{
+    cursor: pointer;
+}
+.youneddlogin{
+    margin-top: 10px;
+    font-size: 28px;
+    color: red;
+}
+#html{
+    position: relative;
+}
+.copy__text {
+    position: absolute;
+    bottom: 35px;
+    font-weight: 600;
+    left: 40%;
+    background-color: white;
+    display: flex;
+    /*    align-items: center;
+    justify-content: space-around;*/
+}
+.spisok{
+    list-style-type: none;
+}
+.te,
+.em,
+.ad{
+    margin-bottom: 50px;
+
+}
+.teA,
+.emA,
+.ada{
+    color: white;
+}

@@ -1,0 +1,69 @@
+﻿@model IEnumerable<ThknApp.Models.Item>
+
+<div class="container">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary">Item List</h2>
+        </div>
+
+        <div class="col-2 text-right">
+            <label>Search: </label>
+        </div>
+        <div class="col-2 text-right">
+            <input type="text" id="filter_input" />
+        </div>
+        <div class="col-2 text-right fdfs">
+            <a asp-controller="Item" asp-action="Create" class="btn btn-primary">Create new Item</a>
+        </div>
+
+
+    </div>
+    <br />
+
+    @if (Model.Count() > 0)
+    {
+        <table class="table table-bordered table-striped" style="width:100%">
+            <thead>
+                <tr>
+                    <th>
+                        Item
+                    </th>
+                    <th>
+                        Cost
+                    </th>
+                    <th>
+                        IsItThere
+                    </th>
+                    <th>
+                        IsItFood
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+
+                        <tr class="filter_List">
+                            <td width="25%">@item.Name</td>
+                            <td width="25%">@item.Cost</td>
+                            <td width="25%">@item.IsItThere</td>
+                            <td width="25%">@item.IsItFood</td>
+                            <td width="25%">
+                                <div class="w-100 btn-group" role="group">
+                                    <a asp-controller="Item" asp-action="Update" asp-route-Id="@item.Id" class="btn btn-primary mx-1">Update</a>
+                                    <a asp-controller="Item" asp-action="Delete" asp-route-Id="@item.Id" class="btn btn-danger mx-1">Delete</a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No items created yet</p>
+    }
+
+</div>
+
