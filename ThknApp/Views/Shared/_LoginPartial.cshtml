@@ -5,7 +5,7 @@
 <form method="post" id="logoutForm" asp-action="Logoff" asp-controller="Account">
     <div class="h_main">
         <a class="textInHeader hH" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-        <a class="textInHeader hL" asp-controller="Item" asp-action="List">List</a>
+        @*<a class="textInHeader hL" asp-controller="Item" asp-action="List">List</a>*@
         <a class="header__phone hpH" href="tel:380963092145">+38 (096) 309 21 45</a>
         <a class="header__email hEm" href="#">layout585@gmail.com</a>
         <span class="textInHeader hello">Hello, @User.Identity.Name! </span>
@@ -16,7 +16,7 @@
 else
 {
 <a class="textInHeader hH" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-<a class="textInHeader hL" asp-controller="Item" asp-action="List">List</a>
+@*<a class="textInHeader hL" asp-controller="Item" asp-action="List">List</a>*@
 <a class="header__phone hpH" href="tel:380963092145">+38 (096) 309 21 45</a>
 <a class="header__email hEm" href="#">layout585@gmail.com</a>
 <a class="textInHeader reg" id="registerLink" asp-controller="Account" asp-action="Register">Register</a>

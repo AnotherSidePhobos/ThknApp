@@ -21,5 +21,10 @@ namespace ThknApp.Controllers
         {
             return View();
         }
+
+        public IActionResult Pictures()
+        {
+            return View();
+        }
     }
 }

@@ -8,93 +8,99 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     <link rel="stylesheet" href="~/css/slick.css" />
-    @*<link rel="stylesheet" href="~/css/jquery.fancybox.min.css" />*@
     <style>
-        a {
-            text-decoration: none; /* Отменяем подчеркивание у ссылки */
+        a:link {
+            color: #cbcacb;
+            text-decoration: none
         }
-        href {
-            text-decoration: none; /* Отменяем подчеркивание у ссылки */
+
+        a:hover {
+            color: orange;
+            text-decoration: none
         }
+        .indexmain {
+            text-align: center;
+        }
+
     </style>
 </head>
 <body>
-    <header>
-        <div class="header__top">
-            <div class="header__contacts">
 
-                @*<a class="text-dark" asp-controller="Item" asp-action="ListFood">ListFood</a>*@
+    <div class="page">
 
 
-                <a data-fancybox data-src="#modal" href="javascript:;" class="header__btn" href="#">
-                    Бесплатная консультация
-                </a>
-
-                <partial name="_LoginPartial" />
-
-            </div>
-        </div>
-        <div class="header__content">
-            <div class="header__content-inner">
-                <div class="header__logo">
-                    <a href="#">
-                        <img src="img/logo.png" alt="">
+        <header>
+            <div class="header__top">
+                <div class="header__contacts">
+                    <a data-fancybox data-src="#modal" href="javascript:;" class="header__btn" href="#">
+                        Бесплатная консультация
                     </a>
+
+                    <partial name="_LoginPartial" />
+
                 </div>
-                <div class="youneddlogin">
-                @if (!User.Identity.IsAuthenticated)
-                {
-                    <span>You need to log in</span>
-                }
-                </div>
-                <nav class="menu">
-                    <a href="#">Главная</a>
-                    <a asp-controller="Home" asp-action="About">О компании</a>
-                    <a href="#">Услуги</a>
-                    <a href="#">Контакты</a>
-                </nav>
             </div>
+            <div class="header__content">
+                <div class="header__content-inner">
+                    <div class="header__logo">
+                        <a asp-controller="Home" asp-action="Index">
+                            <img src="/img/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="youneddlogin">
+                        @if (!User.Identity.IsAuthenticated)
+                        {
+                            <span>You need to log in</span>
+                        }
+                    </div>
+                    <nav class="menu">
+                        <a asp-controller="Home" asp-action="Index">Главная</a>
+                        <a asp-controller="Home" asp-action="About">О компании</a>
+                        <a asp-controller="Home" asp-action="Pictures">Фотоальбом</a>
+                        <a asp-controller="Item" asp-action="List">Список вещей</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+
+
+
+        <div>
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
         </div>
-    </header>
+
+        <footer class="FooterSect">
+            <div class="footer__inner">
+                <div class="footer__inner-info">
+                    <div class="vertical-menu">
+                        <ul class="spisok">
+                            <li class="te"><a class="teA" href="tel:89101216244">+7 910 121 62 44</a></li>
+                            <li class="em"><a class="emA" href="#">layout585@gmail.com</a></li>
+                            <li class="ad"><a class="ada" href="#">Нижний Новгород (почти), ул.Русская, 15</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="footer__inner-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2216.769401350331!2d44.04844111614911!3d56.24749378068849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41502baf1a0b9513%3A0xb316541a436e4702!2z0YPQuy4g0KDRg9GB0YHQutCw0Y8sIDE1LCDQkNC90LrRg9C00LjQvdC-0LLQutCwLCDQndC40LbQtdCz0L7RgNC-0LTRgdC60LDRjyDQvtCx0LsuLCA2MDc2ODY!5e0!3m2!1sru!2sru!4v1621961416784!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
 
 
+            </div>
+            <div class="footer__copy">
+
+                <div>
+                    © 2017 Template by Alexey Melentyev. Все права защищены.
+                </div>
+            </div>
+
+        </footer>
 
 
-    <div>
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
     </div>
-
-    <section class="lineR">
-    </section>
-    <footer class="lastSect">
-        <div class="footer__inner">
-            <div class="footer__inner-info">
-                <div class="vertical-menu">
-                    <ul class="spisok">
-                        <li class="te"><a class="teA" href="tel:89101216244">+7 910 121 62 44</a></li>
-                        <li class="em"><a class="emA" href="#">layout585@gmail.com</a></li>
-                        <li class="ad"><a class="ada" href="#">Нижний Новгород (почти), ул.Русская, 15</a></li>
-                    </ul>
-
-                </div>
-            </div>
-            <div class="footer__inner-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2216.769401350331!2d44.04844111614911!3d56.24749378068849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41502baf1a0b9513%3A0xb316541a436e4702!2z0YPQuy4g0KDRg9GB0YHQutCw0Y8sIDE1LCDQkNC90LrRg9C00LjQvdC-0LLQutCwLCDQndC40LbQtdCz0L7RgNC-0LTRgdC60LDRjyDQvtCx0LsuLCA2MDc2ODY!5e0!3m2!1sru!2sru!4v1621961416784!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-
-
-        </div>
-
-    </footer>
-    <div class="footer__copy">
-
-        <div class="copy__text">
-            © 2017 Template by Alexey Melentyev. Все права защищены.
-        </div>
-    </div>
-
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -105,5 +111,6 @@
     <script src="~/js/main.js"></script>
 
     @await RenderSectionAsync("Scripts", required: false)
+
 </body>
 </html>

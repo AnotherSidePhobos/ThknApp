@@ -436,3 +436,4 @@ C:\Users\amelent\source\repos\ThknApp\ThknApp\obj\Debug\net5.0\ThknApp.csprojAss
 C:\Users\amelent\source\repos\ThknApp\ThknApp\obj\Debug\net5.0\Razor\Views\Item\List.cshtml.g.cs
 C:\Users\amelent\source\repos\ThknApp\ThknApp\obj\Debug\net5.0\Razor\Views\Item\ListFood.cshtml.g.cs
 C:\Users\amelent\source\repos\ThknApp\ThknApp\obj\Debug\net5.0\Razor\Views\Home\About.cshtml.g.cs
+C:\Users\amelent\source\repos\ThknApp\ThknApp\obj\Debug\net5.0\Razor\Views\Home\Pictures.cshtml.g.cs

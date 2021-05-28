@@ -3,6 +3,7 @@
     font-size: 14px;
     line-height: 18px;
     color: #5e5e5e;
+
 }
 .container {
     max-width: 1170px;
@@ -54,7 +55,6 @@
         font-family: 'icomoon';
         position: absolute;
         left: 0;
-        color: #ffc222;
     }
 
 .header__email {
@@ -66,7 +66,6 @@
         font-family: 'icomoon';
         position: absolute;
         left: 0;
-        color: #ffc222;
     }
 
 .header__btn {
@@ -89,7 +88,7 @@
 }
 
 .header__logo{
-    margin-left: 100px;
+    margin: auto;
     margin-bottom: 30px;
 }
 
@@ -238,25 +237,15 @@
     border-color: #ffc222;
 }
 
-.lastSect {
-    background-color: #27365C;
-    min-height: 450px;
-}
-.lineR {
-    min-height: 5px;
-    min-width: 5px;
-    background-color: #099df6; /* Цвет линии */
-    color: #099df6; /* Цвет линии для IE6-7 */
-    border: none; /* Убираем границу */
-}
-.footer__inner{
+
+/*.footer__inner{
     position: relative;
     display: flex;
     justify-content: space-around;
-}
+}*/
 .footer__inner-map {
     position: absolute;
-    right: 450px;
+    right: 250px;
 }
 .footer__inner-info{
     position: absolute;
@@ -271,21 +260,15 @@
     font-size: 28px;
     color: red;
 }
-#html{
+#html {
     position: relative;
+    background-color: antiquewhite;
 }
-.copy__text {
-    position: absolute;
-    bottom: 35px;
-    font-weight: 600;
-    left: 40%;
-    background-color: white;
-    display: flex;
-    /*    align-items: center;
-    justify-content: space-around;*/
-}
-.spisok{
+
+
+.spisok {
     list-style-type: none;
+    min-width: 500px;
 }
 .te,
 .em,
@@ -297,4 +280,149 @@
 .emA,
 .ada{
     color: white;
+}
+
+nav1 ul li {
+    display: inline-block;
+    cursor: pointer;
+}
+.pictList{
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+li{
+    margin: 0 10px;
+}
+.box {
+    border-radius: 4px;
+    box-shadow: 6px 7px 28px 0 rgba(16, 16, 16, 0.7);
+    min-height: 250px;
+    min-width: calc(22% - 28px);
+    padding: 0 10px;
+    margin: 15px;
+    border-width: 3px;
+    float: left;
+    background-repeat: no-repeat;
+
+}
+
+#pic1 {
+    background-image: url(../img/bike/1.jpg);
+}
+.box.pic2 {
+    background-image: url(../img/bike/2.jpg);
+}
+.pic3 {
+    background-image: url(../img/bike/3.jpg);
+}
+.pic4 {
+    background-image: url(../img/bike/4.jpg);
+}
+.pic5 {
+    background-image: url(../img/hiking/1.jfif);
+}
+.pic6 {
+    background-image: url(../img/hiking/2.jfif);
+}
+.pic7 {
+    background-image: url(../img/hiking/2.jpg
+}
+.pic8 {
+    background-image: url(../img/water/1.jpg);
+}
+.pic9 {
+    background-image: url(../img/water/2.jpg);
+}
+.pic10 {
+    background-image: url(/img/water/3.jfif);
+}
+.pic11 {
+    background-image: url(/img/water/3.jpg);
+}
+.pic12 {
+    background-image: url(../img/water/4.jpg);
+}
+.pic13 {
+    background-image: url(../img/water/5.jpg);
+}
+
+/*.footer__inner{
+    position: relative;
+}*/
+/*.footer__copy {
+    position: absolute;
+    bottom: -25px;
+    left: 38%;
+    color: red;
+}*/
+
+.footSect{
+    position: relative;
+    display: flex;
+}
+
+.footer__copy {
+    position: absolute;
+    margin-top: auto;
+    color: wheat;
+    flex-direction: column;
+}
+
+footer {
+    background-color: #27365C;
+    min-height: 450px;
+    margin-top: auto;
+}
+.page{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer{
+    position: relative;
+}
+.vertical-menu{
+    position: absolute;
+    margin-top: auto;
+}
+
+.containerPic img {
+    width: 200px;
+    padding: 0px;
+    transition: 0.5s;
+}
+
+    .containerPic img:hover {
+        transform: scale(1.1);
+    }
+
+.box1 {
+    border-radius: 4px;
+    box-shadow: 16px 17px 28px 0 rgba(16, 16, 16, 0.7);
+    min-height: 250px;
+    min-width: calc(22% - 28px);
+    padding: 0 10px;
+    margin: 15px;
+    border-width: 3px;
+    float: left;
+    background-repeat: no-repeat;
+}
+.hide {
+    opacity: 1;
+    animation-name: a1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes a1 {
+    to {
+        opacity: 0;
+        min-height: 0;
+        min-width: 0;
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
 }
